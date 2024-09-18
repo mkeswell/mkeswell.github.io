@@ -23,16 +23,18 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      text-align: center;
     }
 
     /* Container for the entire content */
     .container {
       max-width: 800px;
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    /* Navigation links at the top */
+    /* Navigation links centered at the top */
     .top-nav {
       margin-bottom: 20px;
     }
@@ -49,6 +51,26 @@
       text-decoration: underline;
     }
 
+    /* Flexbox layout for the profile image and text */
+    .profile-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    /* Profile image styling */
+    .profile-img {
+      max-width: 250px;
+      margin-right: 40px;
+    }
+
+    /* Text section styling */
+    .text-section {
+      max-width: 500px;
+      text-align: left;
+    }
+
     /* Styling for the name (heading) */
     h1 {
       font-size: 2rem;
@@ -59,12 +81,6 @@
     p {
       font-size: 1rem;
       margin-bottom: 1rem;
-    }
-
-    /* Profile image styling (no cropping) */
-    .profile-img {
-      max-width: 250px;
-      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -77,17 +93,22 @@
       <a href="teaching.html">Teaching</a>
     </div>
 
-    <!-- Profile image and text section -->
-    <img src="close_up_office.jpeg" alt="Profile Photo" class="profile-img">
+    <!-- Profile image and text in 2-column format -->
+    <div class="profile-section">
+      <img src="cv/website/close_up_office.jpeg" alt="Profile Photo" class="profile-img">
 
-    <h1>Malcolm Keswell</h1>
-    <p>Associate Professor of Economics</p>
-    <p>University of Cape Town</p>
-    <p>I have a Ph.D from the University of Massachusetts at Amherst (2003).</p>
-    <p>My research and teaching are in the fields of behavioural economics, experimental economics, and development economics.</p>
-    <p><a href="https://github.com/mkeswell">Visit my GitHub profile</a></p>
+      <div class="text-section">
+        <h1>Malcolm Keswell</h1>
+        <p>Associate Professor of Economics</p>
+        <p>University of Cape Town</p>
+        <p>I have a Ph.D from the University of Massachusetts at Amherst (2003).</p>
+        <p>My research and teaching are in the fields of behavioural economics, experimental economics, and development economics.</p>
+        <p><a href="https://github.com/mkeswell">Visit my GitHub profile</a></p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
+
 
 
