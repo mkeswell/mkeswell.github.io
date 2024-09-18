@@ -14,70 +14,85 @@
 
     /* Body styling */
     body {
-      font-family: 'Georgia', serif;
+      font-family: Arial, sans-serif;
       background-color: #ffffff;
-      color: #000000;
+      color: #333333;
       line-height: 1.6;
       margin: 0;
-      padding: 0;
+      padding: 40px;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 100vh;
     }
 
     /* Container styling */
     .container {
       max-width: 800px;
-      padding: 20px;
+      margin-left: 20px;
+    }
+
+    /* Navigation links at the top */
+    .top-nav {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    .top-nav a {
+      font-size: 1rem;
+      color: #007bff;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    .top-nav a:hover {
+      text-decoration: underline;
     }
 
     /* Styling for the name (heading) */
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
 
     /* Paragraph styling */
     p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-bottom: 1rem;
     }
 
-    /* Links */
-    a {
-      text-decoration: none;
-      color: #007bff;
+    /* Profile image styling */
+    .profile-img {
+      max-width: 200px;
+      border-radius: 50%;
+      margin-right: 40px;
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Footer links for navigation */
-    .links {
-      margin-top: 2rem;
-      font-size: 1.1rem;
-    }
-
-    .links a {
-      margin: 0 10px;
+    /* Flexbox for image and text content */
+    .profile-section {
+      display: flex;
+      align-items: flex-start;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Malcolm Keswell</h1>
-    <p>Associate Professor of Economics</p>
-    <p>University of Cape Town</p>
-    <p>I have a Ph.D from the University of Massachusetts at Amherst (2003).</p>
-    <p>My research and teaching are in the fields of behavioural economics, experimental economics, and development economics.</p>
-    <p><a href="https://github.com/mkeswell">Visit my GitHub profile</a></p>
-    
-    <div class="links">
-      <a href="research.html">Research</a> | 
-      <a href="teaching.html">Teaching</a>
+  <!-- Navigation at the top -->
+  <div class="top-nav">
+    <a href="research.html">Research</a> | 
+    <a href="teaching.html">Teaching</a>
+  </div>
+
+  <!-- Profile section containing the image and text -->
+  <div class="profile-section">
+    <img src="your-photo.jpg" alt="Profile Photo" class="profile-img">
+
+    <div class="container">
+      <h1>Malcolm Keswell</h1>
+      <p>Associate Professor of Economics</p>
+      <p>University of Cape Town</p>
+      <p>I have a Ph.D from the University of Massachusetts at Amherst (2003).</p>
+      <p>My research and teaching are in the fields of behavioural economics, experimental economics, and development economics.</p>
+      <p><a href="https://github.com/mkeswell">Visit my GitHub profile</a></p>
     </div>
   </div>
 </body>
