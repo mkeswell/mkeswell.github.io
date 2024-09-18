@@ -5,42 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Malcolm Keswell - Associate Professor of Economics, University of Cape Town</title>
   <style>
+    /* Resetting margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Georgia', serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      background-color: #f4f4f4;
-    }
-    .container {
+      min-height: 100vh;
       text-align: center;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
+
+    /* Container styling */
+    .container {
+      max-width: 800px;
+      padding: 20px;
     }
+
+    /* Styling for the name (heading) */
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Paragraph styling */
     p {
       font-size: 1.2rem;
-      margin-bottom: 20px;
+      margin-bottom: 1rem;
     }
+
+    /* Links */
     a {
       text-decoration: none;
       color: #007bff;
-      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer links for navigation */
+    .links {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .links a {
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Malcolm Keswell</h1>
-    <p>I am an Associate Professor in the school of Economics at the University of Cape Town.</p>
+    <p>Associate Professor of Economics</p>
+    <p>University of Cape Town</p>
     <p>I have a Ph.D from the University of Massachusetts at Amherst (2003).</p>
     <p>My research and teaching are in the fields of behavioural economics, experimental economics, and development economics.</p>
     <p><a href="https://github.com/mkeswell">Visit my GitHub profile</a></p>
-    <p><a href="research.html">Research</a> | <a href="teaching.html">Teaching</a></p>
+    
+    <div class="links">
+      <a href="research.html">Research</a> | 
+      <a href="teaching.html">Teaching</a>
+    </div>
   </div>
 </body>
 </html>
