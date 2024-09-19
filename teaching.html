@@ -5,41 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Malcolm Keswell - Teaching</title>
   <style>
+    /* Global reset for box-sizing */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Body styling */
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
       background-color: #f4f4f4;
+      color: #333;
+      padding: 40px;
     }
+
+    /* Center the main content */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Center and style the main heading */
     h1 {
       text-align: center;
-      font-size: 3rem;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      font-weight: normal;
+    }
+
+    /* Paragraph and list styling */
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
       margin-bottom: 20px;
     }
-    p {
-      font-size: 1.2rem;
+
+    /* List style */
+    ul {
+      list-style-type: none;
+      padding-left: 0;
     }
-    a {
-      text-decoration: none;
+
+    li {
+      margin-bottom: 30px;
+    }
+
+    /* Course title styling */
+    li strong {
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 10px;
       color: #007bff;
-      font-weight: bold;
+    }
+
+    /* Link styling */
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Back link styling */
+    .back-link {
+      text-align: center;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <h1>Teaching</h1>
-  <p>Courses I teach include:</p>
-  <ul>
-    <li>
+  <!-- Main container for all content -->
+  <div class="container">
+    <h1>Teaching</h1>
+    <p>Courses I teach include:</p>
+    <ul>
+      <li>
+        <strong>ECO5064S: Behavioural Economics</strong>
+        Behavioural economics is a relatively new field within economics. At its core is a strong interdisciplinary approach to modeling economic decision making. The course extends the framework of choice theory by incorporating two robust empirical findings about economic behaviour: 
+        <ul>
+          <li>(i) People are boundedly rational.</li>
+          <li>(ii) People frequently behave in other-regarding ways.</li>
+        </ul>
+        Topics include:
+        <ul>
+          <li>Risk attitudes with bounded rationality.</li>
+          <li>Risk preferences under stress and violence.</li>
+          <li>Rational altruism and altruistic punishment.</li>
+          <li>Trust and social cohesion.</li>
+          <li>Emotions and decision making.</li>
+        </ul>
+      </li>
 
-      ECO5064S: Behavioural Economics
-      
-      Behavioural economics is a relatively new field within economics. At its core is a strong interdisciplinary approach to modelling economic decision making. The course extends the framework of choice theory by incorporating two robust empirical findings about economic behaviour: (i) that people are boundedly rational; and (ii) that people frequently behave in other-regarding ways. The topics to be covered are: risk attitudes with bounded rationality (topic 1); risk preferences under exposure to stress and violence (topic 2);  rational altruism and and altruist punishment (topic 3); trust and social cohesion (topic 4); and emotions and decision making (topic 5).
-      
-      ECO5076S: Development Microeconomics
-      This course is about the application of microeconomic analysis to issues of development in low and middle income countries. The main objective is to undertake a critical reading of recent research on the empirical microeconomics of development. Topics covered are: (1) the econometrics of impact evaluation; (2) land contracts and land reform; (3) intra-household resource allocation and gender bias; (4) the evaluation of human capital programs; (5) the structure of labour and credit markets in developing countries; and (6) the microeconomic impacts of international trade.
-    <li>Econometrics (ECO5000)</li>
-  </ul>
-  <p><a href="index.html">Back to Homepage</a></p>
+      <li>
+        <strong>ECO5000: Econometrics</strong>
+        A course covering the fundamental techniques of econometrics, focused on real-world application and empirical data analysis.
+      </li>
+
+      <li>
+        <strong>ECO5076S: Development Microeconomics</strong>
+        This course applies microeconomic analysis to issues of development in low- and middle-income countries. The main objectives include:
+        <ul>
+          <li>Evaluating the econometrics of impact evaluation.</li>
+          <li>Examining land contracts and land reform.</li>
+          <li>Intra-household resource allocation and gender bias.</li>
+          <li>The structure of labor and credit markets in developing countries.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="back-link">
+      <p><a href="index.html">Back to Homepage</a></p>
+    </div>
+  </div>
 </body>
 </html>
