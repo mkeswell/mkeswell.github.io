@@ -33,7 +33,7 @@
 
     /* Styling for the image */
     .profile-img {
-      width: 580px; /* Optimal width */
+      width: 520px; /* Optimal width */
       height: auto;  /* Scale height proportionally */
       margin-right: 40px;
     }
@@ -71,7 +71,7 @@
     }
 
     .top-nav a {
-      font-size: 1rem; /* Font size for links */
+      font-size: 0.9rem; /* Font size for links */
       color: #007bff;
       text-decoration: none;
       margin-right: 15px;
@@ -80,6 +80,14 @@
     .top-nav a:hover {
       text-decoration: underline;
     }
+
+       /* Adjust layout for mobile devices */
+       @media screen and (max-width: 768px) {
+      .profile-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
 
     /* Back link styling */
     .back-link {
