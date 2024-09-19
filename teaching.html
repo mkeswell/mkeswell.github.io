@@ -17,21 +17,43 @@
       font-family: Arial, sans-serif;
       background-color: #ffffff;
       color: #333;
-      padding: 40px;
-      line-height: 1.6;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden; /* Prevent scrolling */
+    }
+
+    /* Wrapper to contain both image and content */
+    .wrapper {
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+    }
+
+    /* Styling for the image */
+    .profile-img {
+      height: 100vh; /* Full viewport height */
+      margin-right: 20px;
+    }
+
+    /* Content container */
+    .content {
+      max-width: 600px; /* Constrain the width of the body content */
     }
 
     /* Center and style the main heading */
     h1 {
       text-align: left;
-      font-size: 1.5rem; /* Matching the size from mkeswell.github.io */
+      font-size: 1.5rem;
       margin-bottom: 20px;
       font-weight: normal;
     }
 
     /* Paragraph styling */
     p {
-      font-size: 1rem; /* Matching the size from mkeswell.github.io */
+      font-size: 1rem;
       margin-bottom: 20px;
     }
 
@@ -42,7 +64,7 @@
     }
 
     .top-nav a {
-      font-size: 1rem; /* Matching font size */
+      font-size: 1rem;
       color: #007bff;
       text-decoration: none;
       margin-right: 15px;
@@ -59,36 +81,44 @@
   </style>
 </head>
 <body>
-  <!-- Navigation bar at the top -->
-  <div class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html">Contact</a>
-  </div>
+  <!-- Wrapper containing image and content -->
+  <div class="wrapper">
+    <!-- Left side: Profile image -->
+    <img src="with_students_nairobi_july_2019.jpeg" alt="Malcolm Keswell with Students" class="profile-img">
 
-  <!-- Main content -->
-  <h1>Teaching</h1>
-  <p>
-    <strong>ECO5064S: Behavioural Economics</strong><br>
-    Behavioural economics is a relatively new field within economics. At its core is a strong interdisciplinary approach to modelling economic decision-making. This course extends the framework of choice theory by incorporating two robust empirical findings about economic behaviour: 
-    (i) people are boundedly rational and (ii) people frequently behave in other-regarding ways. The topics covered are: risk attitudes with bounded rationality, risk preferences under exposure to stress and violence, rational altruism and altruistic punishment, trust and social cohesion, and emotions and decision-making.
-  </p>
+    <!-- Right side: Main content -->
+    <div class="content">
+      <!-- Navigation bar at the top -->
+      <div class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
 
-  <p>
-    <strong>ECO5000: Econometrics</strong><br>
-    This course covers the fundamental techniques of econometrics, focusing on real-world application and empirical data analysis.
-  </p>
+      <h1>Teaching</h1>
+      <p>
+        <strong>ECO5064S: Behavioural Economics</strong><br>
+        Behavioural economics is a relatively new field within economics. At its core is a strong interdisciplinary approach to modelling economic decision-making. This course extends the framework of choice theory by incorporating two robust empirical findings about economic behaviour: 
+        (i) people are boundedly rational and (ii) people frequently behave in other-regarding ways. The topics covered are: risk attitudes with bounded rationality, risk preferences under exposure to stress and violence, rational altruism and altruistic punishment, trust and social cohesion, and emotions and decision-making.
+      </p>
 
-  <p>
-    <strong>ECO5076S: Development Microeconomics</strong><br>
-    This course applies microeconomic analysis to issues of development in low- and middle-income countries. The main objectives include the econometrics of impact evaluation, land contracts and land reform, intra-household resource allocation and gender bias, the evaluation of human capital programs, the structure of labor and credit markets in developing countries, and the microeconomic impacts of international trade.
-  </p>
+      <p>
+        <strong>ECO5000: Econometrics</strong><br>
+        This course covers the fundamental techniques of econometrics, focusing on real-world application and empirical data analysis.
+      </p>
 
-  <!-- Back to Homepage link -->
-  <div class="back-link">
-    <p><a href="index.html">Back to Homepage</a></p>
+      <p>
+        <strong>ECO5076S: Development Microeconomics</strong><br>
+        This course applies microeconomic analysis to issues of development in low- and middle-income countries. The main objectives include the econometrics of impact evaluation, land contracts and land reform, intra-household resource allocation and gender bias, the evaluation of human capital programs, the structure of labor and credit markets in developing countries, and the microeconomic impacts of international trade.
+      </p>
+
+      <!-- Back to Homepage link -->
+      <div class="back-link">
+        <p><a href="index.html">Back to Homepage</a></p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
