@@ -21,30 +21,27 @@
       margin: 0;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
     }
 
     /* Container for the entire content */
     .container {
-      max-width: 800px;
+      max-width: 1000px;
       padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      margin: 0 auto;
+      text-align: center;
     }
 
     /* Navigation links centered at the top */
     .top-nav {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     .top-nav a {
-      font-size: 1rem;
+      font-size: 0.9rem;
       color: #007bff;
       text-decoration: none;
-      margin-left: 15px;
-      margin-right: 15px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
 
     .top-nav a:hover {
@@ -56,13 +53,17 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: left;
     }
 
     /* Profile image styling */
     .profile-img {
       max-width: 250px;
       margin-right: 40px;
+      width: 250px;
+      height: auto;
     }
 
     /* Text section styling */
@@ -73,14 +74,45 @@
 
     /* Styling for the name (heading) */
     h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-bottom: 0.5rem;
+      font-weight: normal;
     }
 
     /* Paragraph styling */
     p {
-      font-size: 1rem;
+      font-size: 0.9rem;
       margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    /* Links in the main body */
+    .text-section a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .text-section a:hover {
+      text-decoration: underline;
+    }
+
+    /* Adjust layout for mobile devices */
+    @media screen and (max-width: 768px) {
+      .profile-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      .text-section {
+        text-align: center;
+        max-width: 100%;
+      }
     }
   </style>
 </head>
@@ -89,7 +121,7 @@
   <div class="container">
     <!-- Navigation centered at the top -->
     <div class="top-nav">
-      <a href="research.html">Research</a> | 
+      <a href="research.html">Research</a> 
       <a href="teaching.html">Teaching</a>
     </div>
 
