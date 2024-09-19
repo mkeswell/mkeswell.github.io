@@ -81,20 +81,35 @@
       text-decoration: underline;
     }
 
-       /* Adjust layout for mobile devices */
-       @media screen and (max-width: 300px) {
-        .profile-img {
-        width: 50%;
-        height: auto;
-      }
-      .profile-section {
-        flex-direction: column;
-        align-items: center;
-      }
-      .text-section {
-        max-width: 50%;
-      }
-    }
+  /* Adjust layout for mobile devices */
+@media screen and (max-width: 768px) {
+  .profile-img {
+    width: 50%; /* Adjust image width for better fit on smaller screens */
+    height: auto;
+    margin-bottom: 20px; /* Space below the image */
+  }
+
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center-align text below the image */
+  }
+
+  .text-section {
+    width: 50%; /* Adjust text section width to fit mobile screens */
+    max-width: none; /* Remove max-width constraint */
+  }
+
+  /* Adjust font sizes for better readability on smaller screens */
+  h1 {
+    font-size: 1.2rem; /* Adjust heading size if needed */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph size if needed */
+  }
+}
+
 
 
     /* Back link styling */
