@@ -21,6 +21,9 @@
       margin: 0;
       display: flex;
       justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     /* Container for the entire content */
@@ -31,7 +34,7 @@
       text-align: center;
     }
 
-    /* Styling for the title above navigation */
+    /* Styling for the title */
     .title {
       font-size: 2rem; /* Adjust size to match your preference */
       font-weight: bold;
@@ -42,6 +45,7 @@
     /* Navigation links centered under the title */
     .top-nav {
       margin-bottom: 30px;
+      text-align: center;
     }
 
     .top-nav a {
@@ -56,28 +60,28 @@
       text-decoration: underline;
     }
 
-    /* Flexbox layout for the profile image and text */
+    /* Profile image and text displayed below the title and navigation */
     .profile-section {
       display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
       max-width: 1000px;
       margin: 0 auto;
-      text-align: left;
+      text-align: center;
     }
 
     /* Profile image styling */
     .profile-img {
       max-width: 250px;
-      margin-right: 40px;
       width: 250px;
       height: auto;
+      margin-bottom: 20px;
     }
 
     /* Text section styling */
     .text-section {
       max-width: 500px;
-      text-align: left;
+      text-align: center;
     }
 
     /* Styling for the name (heading) */
@@ -106,47 +110,44 @@
 
     /* Adjust layout for mobile devices */
     @media screen and (max-width: 768px) {
-      .profile-section {
-        flex-direction: column;
-        align-items: center;
-      }
-
       .profile-img {
-        margin-right: 0;
-        margin-bottom: 20px;
         width: 100%;
+        height: auto;
       }
 
       .text-section {
-        text-align: center;
         max-width: 100%;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Title section -->
-  <div class="title">Malcolm Keswell</div>
+  <!-- Container for all content -->
+  <div class="container">
+    <!-- Title section centered above navigation -->
+    <div class="title">Malcolm Keswell</div>
 
-  <!-- Navigation centered at the top -->
-  <div class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html">Contact</a>
-  </div>
+    <!-- Navigation centered below title -->
+    <div class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
-  <!-- Profile image and text in 2-column format -->
-  <div class="profile-section">
-    <img src="close_up_office.jpeg" alt="Profile Photo" class="profile-img">
+    <!-- Profile image and text displayed below title and navigation -->
+    <div class="profile-section">
+      <img src="close_up_office.jpeg" alt="Profile Photo" class="profile-img">
 
-    <div class="text-section">
-      <p>Associate Professor of Economics</p>
-      <p>University of Cape Town</p>
-      <p>I have a Ph.D from the University of Massachusetts at Amherst (2003).</p>
-      <p>My research and teaching are in the fields of behavioural economics, experimental economics, and development economics.</p>
-      <p><a href="https://github.com/mkeswell">Visit my GitHub profile here.</a></p>
+      <div class="text-section">
+        <h1>Malcolm Keswell</h1>
+        <p>Associate Professor of Economics</p>
+        <p>University of Cape Town</p>
+        <p>I have a Ph.D from the University of Massachusetts at Amherst (2003).</p>
+        <p>My research and teaching are in the fields of behavioural economics, experimental economics, and development economics.</p>
+        <p><a href="https://github.com/mkeswell">Visit my GitHub profile here.</a></p>
+      </div>
     </div>
   </div>
 </body>
