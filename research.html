@@ -18,22 +18,21 @@
       background-color: #ffffff;
       color: #333;
       padding: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
-    /* Content container */
+    /* Center the content container */
     .content {
-      max-width: 600px; /* Constrain the width of the body content */
-      width: 100%;
+      max-width: 900px; /* Constrain the width of the body content */
+      margin: 0 auto; /* Center the content horizontally */
+      padding-top: 40px; /* Add some top padding */
     }
 
     /* Styling for the name (heading) */
     h1 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      font-weight: normal;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      text-align: center;
     }
 
     /* Styling for the section title (heading) */
@@ -52,24 +51,36 @@
 
     /* Navigation bar at the top */
     .top-nav {
-      margin-bottom: 20px;
-      text-align: left;
+      text-align: center; /* Center the navigation links */
+      margin-bottom: 30px;
     }
 
     .top-nav a {
-      font-size: 0.9rem; /* Font size for links */
-      color: #007bff;
-      text-decoration: none;
+      font-size: 1rem; /* Font size for links */
+      color: #333; /* Remove color */
+      text-decoration: none; /* Remove underlining */
       margin-right: 15px;
     }
 
     .top-nav a:hover {
-      text-decoration: underline;
+      text-decoration: none; /* No underline on hover */
+      font-weight: bold; /* Make links bold on hover */
     }
 
     /* Back link styling */
     .back-link {
       margin-top: 40px;
+      text-align: center;
+    }
+
+    /* Style for the clickable links in the content */
+    a {
+      color: inherit; /* Use the same color as the surrounding text */
+      text-decoration: none; /* Remove underline from all hyperlinks */
+    }
+
+    a:hover {
+      font-weight: bold; /* Make the text bold when hovered */
     }
   </style>
 </head>
@@ -112,3 +123,4 @@
   </div>
 </body>
 </html>
+
