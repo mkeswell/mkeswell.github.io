@@ -3,136 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Malcolm Keswell - Teaching</title>
+  <title>Malcolm Keswell - Associate Professor of Economics, University of Cape Town</title>
   <style>
-    /* Global reset for box-sizing */
-    * {
-      box-sizing: border-box;
+    /* Resetting margin and padding */
+    *{
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
-
     /* Body styling */
     body {
       font-family: Arial, sans-serif;
       background-color: #ffffff;
-      color: #333;
+      color: #333333;
+      line-height: 1.6;
+      margin: 0;
+      display: flex;
+     /* justify-content: center;*/
+    /*  align-items: center;*/
+      flex-direction: column;
+    /*  min-height: 100vh;*/
+    }
+
+     /* Container for the entire content */
+     .container {
+      max-width: 900px;
       padding: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      margin: 0 auto;
+      text-align: left;
     }
 
-    /* Wrapper to contain both image and content */
-    .wrapper {
-      display: flex;
-      align-items: flex-start;
-      max-width: 1200px;
-      flex-wrap: wrap;
+      /* Styling for the title */
+      .title {
+      font-size: 1.5rem; /* Adjust size to match your preference */
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
     }
 
-    /* Styling for the image */
-    .profile-img {
-      width: 520px; /* Optimal width */
-      height: auto;  /* Scale height proportionally */
-      margin-right: 40px;
-    }
-
-    /* Content container */
+    /* Center the content container */
     .content {
-      max-width: 600px; /* Constrain the width of the body content */
-    }
-
-     /* Styling for the name (heading) */
-     h1 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      font-weight: normal;
+      max-width: 900px; /* Constrain the width of the body content */
+      margin: 0 auto; /* Center the content horizontally */
+      padding-top: 40px; /* Add some top padding */
     }
 
     /* Styling for the name (heading) */
-      h2 {
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* Styling for the section title (heading) */
+    h2 {
       font-size: 1.2rem;
       margin-bottom: 0.5rem;
       font-weight: normal;
     }
 
-   /* Paragraph styling */
-   p {
+    /* Paragraph styling */
+    p {
       font-size: 0.9rem;
       margin-bottom: 1rem;
       line-height: 1.4;
     }
 
-    /* Navigation bar at the top */
+    /* Navigation links centered under the title */
     .top-nav {
-      margin-bottom: 20px;
-      text-align: left;
+      margin-bottom: 30px;
+      text-align: center;
     }
 
     .top-nav a {
-      font-size: 0.9rem; /* Font size for links */
+      font-size: 0.9rem; /* Adjusted to be consistent with the rest of the site */
       color: #007bff;
       text-decoration: none;
-      margin-right: 15px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
 
     .top-nav a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
 
-  /* Adjust layout for mobile devices */
-@media screen and (max-width: 768px) {
-  .profile-img {
-    width: 50%; /* Adjust image width for better fit on smaller screens */
-    height: auto;
-    margin-bottom: 20px; /* Space below the image */
-  }
-
-  .profile-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Center-align text below the image */
-  }
-
-  .text-section {
-    width: 50%; /* Adjust text section width to fit mobile screens */
-    max-width: none; /* Remove max-width constraint */
-  }
-
-  /* Adjust font sizes for better readability on smaller screens */
-  h1 {
-    font-size: 1.2rem; /* Adjust heading size if needed */
-  }
-
-  p {
-    font-size: 0.9rem; /* Adjust paragraph size if needed */
-  }
-}
-
-
-
-    /* Back link styling */
-    .back-link {
-      margin-top: 40px;
+    /* Remove underline from all content links */
+    a {
+      text-decoration: none; /* Remove underline */
+      color: inherit; /* Inherit the color of the surrounding text */
     }
+
+    a:hover {
+      font-weight: bold; /* Bold text on hover */
+    }
+
   </style>
 </head>
 <body>
-  <!-- Wrapper containing image and content -->
-  <div class="wrapper">
-    <!-- Left side: Profile image -->
-    <img src="with_students_nairobi_july_2019.jpeg" alt="Malcolm Keswell with Students" class="profile-img">
+  <!-- Container for all content -->
+  <div class="container">
+    <!-- Title section centered above navigation -->
+    <div class="title">Malcolm Keswell</div>
 
-    <!-- Right side: Main content -->
-    <div class="content">
-      <!-- Navigation bar at the top -->
-      <div class="top-nav">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-      </div>
-      <h1>Malcolm Keswell</h1>
+
+    <!-- Navigation bar below the title -->
+    <div class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+    </div>
       <h2>Teaching</h2>
       <p>
         <strong>ECO5064S: Behavioural Economics</strong><br>
