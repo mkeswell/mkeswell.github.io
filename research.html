@@ -25,23 +25,37 @@
     /*  min-height: 100vh;*/
     }
 
-    /* Container for the entire content */
-    .container {
-      max-width: 900px;
-      padding: 40px;
-      margin: 0 auto;
-    /*  text-align: center;*/
+    /* Center the content container */
+    .content {
+      max-width: 900px; /* Constrain the width of the body content */
+      margin: 0 auto; /* Center the content horizontally */
+      padding-top: 40px; /* Add some top padding */
     }
 
-    /* Styling for the title */
-    .title {
-      font-size: 1.5rem; /* Adjust size to match your preference */
+    /* Styling for the name (heading) */
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
       font-weight: bold;
-      margin-bottom: 10px;
       text-align: center;
     }
- /* Navigation links centered under the title */
- .top-nav {
+
+    /* Styling for the section title (heading) */
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: normal;
+    }
+
+    /* Paragraph styling */
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    /* Navigation links centered under the title */
+    .top-nav {
       margin-bottom: 30px;
       text-align: center;
     }
@@ -58,47 +72,16 @@
       text-decoration: none;
     }
 
-    /* Text section styling */
-    .text-section {
-      max-width: 500px;
-      text-align: left;
+    /* Remove underline from all content links */
+    a {
+      text-decoration: none; /* Remove underline */
+      color: inherit; /* Inherit the color of the surrounding text */
     }
 
-    /* Styling for the name (heading) */
-    h1 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      font-weight: normal;
+    a:hover {
+      font-weight: bold; /* Bold text on hover */
     }
 
-    /* Paragraph styling */
-    p {
-      font-size: 0.9rem; /* Font size adjusted to match your index page */
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-
-    /* Links in the main body */
-    .text-section a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .text-section a:hover {
-      text-decoration: none;
-    }
-
-    /* Adjust layout for mobile devices */
-    @media screen and (max-width: 650px) {
-      .profile-img {
-        width: 100%;
-        height: auto;
-      }
-
-      .text-section {
-        max-width: 100%;
-      }
-    }
   </style>
 </head>
 <body>
