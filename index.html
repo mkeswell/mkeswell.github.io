@@ -110,16 +110,55 @@
     }
 
     /* Adjust layout for mobile devices */
-    @media screen and (max-width: 650px) {
-      .profile-img {
-        width: 100%;
-        height: auto;
-      }
+/* Adjust layout for mobile devices */
+@media screen and (max-width: 650px) {
+  /* Navigation styling */
+  nav {
+    display: none; /* Hide navigation initially */
+    text-align: center; /* Center navigation links */
+    background-color: #f8f9fa; /* Optional: light background */
+    padding: 10px 0;
+  }
 
-      .text-section {
-        max-width: 100%;
-      }
-    }
+  .menu-icon {
+    display: block; /* Show menu icon on mobile */
+    text-align: center; 
+    font-size: 30px; /* Large enough for touch interaction */
+    padding: 10px 0;
+  }
+
+  .menu-icon:hover {
+    cursor: pointer;
+  }
+
+  /* When menu is active (e.g., after clicking the icon) */
+  nav.active {
+    display: block; /* Show the navigation pane */
+  }
+
+  /* Profile image styling */
+  .profile-img {
+    width: 100%; /* Make sure it takes up the full width */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center the image with margin on top and bottom */
+    max-width: 300px; /* Optional: limit the max width of the image */
+  }
+
+  /* Text section styling */
+  .text-section {
+    max-width: 100%;
+    padding: 0 15px; /* Add padding for better readability */
+    font-size: 16px; /* Adjust font size for mobile */
+    text-align: left;
+  }
+
+  /* Ensure touchable elements like buttons are sized properly */
+  button, a {
+    padding: 10px 20px; /* Increase size for touch areas */
+  }
+}
+
   </style>
 </head>
 <body>
