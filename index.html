@@ -17,8 +17,6 @@
       font-family: Arial, sans-serif;
       line-height: 1.6;
       margin: 0;
-      display: flex;
-      flex-direction: column;
     }
 
     /* Container for all content */
@@ -36,34 +34,26 @@
       margin-bottom: 10px;
     }
 
-    /* Profile section */
-    .profile-section {
+    /* Top Navigation */
+    .top-nav {
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      margin: 0 auto;
-      text-align: left;
+      background-color: #f8f9fa;
+      padding: 10px;
     }
 
-    .profile-img {
-      max-width: 250px;
-      width: 250px;
-      height: auto;
-      margin-right: 40px;
+    .top-nav a {
+      text-decoration: none;
+      color: #007bff;
+      margin: 0 15px;
+      font-size: 1rem;
     }
 
-    .text-section {
-      max-width: 500px;
+    .top-nav a:hover {
+      text-decoration: underline;
     }
 
-    /* Paragraph styling */
-    p {
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-
-    /* Top Navigation */
+    /* Hidden dropdown menu for mobile */
     nav {
       display: none;
       background-color: #f8f9fa;
@@ -106,8 +96,43 @@
       display: block;
     }
 
+    /* Profile section */
+    .profile-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .profile-img {
+      max-width: 250px;
+      width: 250px;
+      height: auto;
+      margin-right: 40px;
+    }
+
+    .text-section {
+      max-width: 500px;
+    }
+
+    /* Paragraph styling */
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
     /* Mobile-specific styling */
     @media screen and (max-width: 650px) {
+      .top-nav {
+        display: none;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+
       .profile-section {
         flex-direction: column;
         align-items: center;
@@ -125,10 +150,6 @@
         font-size: 16px;
         text-align: center;
       }
-
-      .menu-icon {
-        display: block;
-      }
     }
   </style>
 </head>
@@ -137,6 +158,13 @@
   <div class="menu-icon" onclick="toggleMenu()">☰</div>
   
   <!-- Navigation -->
+  <div class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="bio.html">Bio/CV</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+  </div>
+  
   <nav id="dropdown-menu">
     <ul>
       <li><a href="index.html">Home</a></li>
