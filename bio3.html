@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malcolm Keswell - Associate Professor of Economics</title>
+  <style>
+    /* Resetting margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Container for all content */
+    .container {
+      max-width: 900px;
+      padding: 40px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Title section */
+    .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Top Navigation */
+    .top-nav {
+      display: flex;
+      justify-content: center;
+      background-color: #f8f9fa;
+      padding: 10px;
+    }
+
+    .top-nav a {
+      text-decoration: none;
+      color: #007bff;
+      margin: 0 15px;
+      font-size: 1rem;
+    }
+
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hidden dropdown menu for mobile */
+    nav {
+      display: none;
+      background-color: #f8f9fa;
+      padding: 10px;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      z-index: 1000;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    nav.active {
+      display: block;
+    }
+
+    /* Profile section */
+    .profile-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .profile-img {
+      max-width: 250px;
+      width: 250px;
+      height: auto;
+      margin-right: 40px;
+    }
+
+    .text-section {
+      max-width: 500px;
+    }
+
+    /* Paragraph styling */
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    /* Mobile-specific styling */
+    @media screen and (max-width: 650px) {
+      .top-nav {
+        display: none;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+
+      .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .profile-img {
+        margin: 20px auto;
+        max-width: 300px;
+      }
+
+      .text-section {
+        max-width: 100%;
+        padding: 0 15px;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hamburger Menu Icon -->
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  
+  <!-- Navigation -->
+  <div class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="bio.html">Bio/CV</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+  </div>
+  
+  <nav id="dropdown-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bio.html">Bio/CV</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+    </ul>
+  </nav>
+
+  <!-- Container for content -->
+  <div class="container">
+    <!-- Title -->
+    <div class="title">Malcolm Keswell</div>
+
+    <!-- Profile Section -->
+    <div class="profile-section">
+      <img src="close_up_office.jpeg" alt="Profile photo of Malcolm Keswell" class="profile-img">
+      <div class="text-section">
+        <p> <b>Malcolm Keswell</b> is an associate professor in the school of Economics at the University of Cape Town. 
+          He holds a Ph.D from the University of Massachusetts at Amherst (2003). 
+        </p>  
+        <p>He teaches undergraduate Game Theory, advanced undergraduate Econometrics, 
+          and postgraduate Econometrics and Behavioural Economics. 
+          
+          <p>He recently completed the Land Restitution Impact Evaluation Study (LRES), which evaluated the impacts of 
+          land restitution awards made in South Africa for the decade (2013-2022). </p>
+          
+          <p>His current research is on the economic analysis of risk, 
+          and the application of machine learning to administrative data for the purposes of conducting impact evaluations.
+        </p>
+          <p><a href="https://lres.uct.ac.za/index.php/lres-conference/">Visit the LRES conference page here</a></p>
+        <p>Email: malcolm.keswell@uct.ac.za</a></p>
+        
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Function to toggle navigation menu
+    function toggleMenu() {
+      const nav = document.getElementById('dropdown-menu');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
