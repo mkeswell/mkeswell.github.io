@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Malcolm Keswell - Associate Professor of Economics</title>
+  <title>Malcolm Keswell - Associate Professor of Economics, University of Cape Town</title>
   <style>
     /* Resetting margin and padding */
-    * {
+    *{
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -15,44 +15,51 @@
     /* Body styling */
     body {
       font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
       line-height: 1.6;
       margin: 0;
+      display: flex;
+     /* justify-content: center;*/
+    /*  align-items: center;*/
+      flex-direction: column;
+    /*  min-height: 100vh;*/
     }
 
-    /* Container for all content */
+    /* Container for the entire content */
     .container {
       max-width: 900px;
       padding: 40px;
       margin: 0 auto;
+     text-align: center;
+    }
+
+   /* Styling for the title */
+   .title {
+      font-size: 1.5rem; /* Adjust size to match your preference */
+      font-weight: bold;
+      margin-bottom: 10px;
       text-align: center;
     }
 
-    /* Title section */
-    .title {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    /* Top Navigation */
-    .top-nav {
-      display: flex;
-      justify-content: center;
-      background-color: #f8f9fa;
-      padding: 10px;
+   /* Navigation links centered under the title */
+   .top-nav {
+      margin-bottom: 30px;
+      text-align: center;
     }
 
     .top-nav a {
-      text-decoration: none;
+      font-size: 0.9rem; /* Adjusted to be consistent with the rest of the site */
       color: #007bff;
-      margin: 0 15px;
-      font-size: 1rem;
+      text-decoration: none;
+      margin-left: 20px;
+      margin-right: 20px;
     }
 
     .top-nav a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
-
+    
     /* Hidden dropdown menu for mobile */
     nav {
       display: none;
