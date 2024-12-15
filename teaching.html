@@ -99,22 +99,77 @@
       font-weight: bold; /* Bold text on hover */
     }
 
+     /* Hidden dropdown menu for mobile */
+     nav {
+      display: none;
+      background-color: #f8f9fa;
+      padding: 10px;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      z-index: 1000;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 50px;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    nav.active {
+      display: block;
+    }
+
   </style>
 </head>
 <body>
+  <!-- Hamburger Menu Icon -->
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
   <!-- Container for all content -->
   <div class="container">
     <!-- Title section centered above navigation -->
     <div class="title">Malcolm Keswell</div>
 
-
-    <!-- Navigation bar below the title -->
+    <!-- Navigation centered below title -->
     <div class="top-nav">
       <a href="index.html">Home</a>
       <a href="bio.html">Bio/CV</a>
       <a href="research.html">Research</a>
       <a href="teaching.html">Teaching</a>
     </div>
+
+    <nav id="dropdown-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bio.html">Bio/CV</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+    </ul>
+  </nav>
+
       <h2>Courses</h2>
       <p>
         <strong>ECO2007S: Economics of Cooperation and Competition</strong><br>
@@ -150,5 +205,14 @@
 
     </div>
   </div>
+
+  <script>
+    // Function to toggle navigation menu
+    function toggleMenu() {
+      const nav = document.getElementById('dropdown-menu');
+      nav.classList.toggle('active');
+    }
+  </script>
+
 </body>
 </html>
