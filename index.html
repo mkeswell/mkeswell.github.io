@@ -34,16 +34,16 @@
      text-align: center;
     }
 
-   /* Styling for the title */
-   .title {
+    /* Styling for the title */
+    .title {
       font-size: 1.5rem; /* Adjust size to match your preference */
       font-weight: bold;
       margin-bottom: 10px;
       text-align: center;
     }
 
-   /* Navigation links centered under the title */
-   .top-nav {
+    /* Navigation links centered under the title */
+    .top-nav {
       margin-bottom: 30px;
       text-align: center;
     }
@@ -59,7 +59,7 @@
     .top-nav a:hover {
       text-decoration: none;
     }
-    
+
     /* Hidden dropdown menu for mobile */
     nav {
       display: none;
@@ -103,35 +103,58 @@
       display: block;
     }
 
-    /* Profile section */
-    .profile-section {
+      /* Flexbox layout for the profile image and text */
+      .profile-section {
       display: flex;
       justify-content: center;
       align-items: flex-start;
+      max-width: 1000px;
       margin: 0 auto;
       text-align: left;
     }
 
+    /* Profile image styling */
     .profile-img {
       max-width: 250px;
+      margin-right: 40px;
       width: 250px;
       height: auto;
-      margin-right: 40px;
     }
 
+    /* Text section styling */
     .text-section {
       max-width: 500px;
+      text-align: left;
+    }
+
+
+     /* Styling for the name (heading) */
+     h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      text-align: center;
     }
 
     /* Paragraph styling */
     p {
-      font-size: 0.9rem;
+      font-size: 0.9rem; /* Font size adjusted to match your index page */
       margin-bottom: 1rem;
       line-height: 1.6;
     }
 
-    /* Mobile-specific styling */
-    @media screen and (max-width: 650px) {
+    /* Links in the main body */
+    .text-section a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .text-section a:hover {
+      text-decoration: underline;
+    }
+
+     /* Mobile-specific styling */
+     @media screen and (max-width: 650px) {
       .top-nav {
         display: none;
       }
@@ -157,22 +180,27 @@
         font-size: 16px;
         text-align: center;
       }
-    }
   </style>
 </head>
 <body>
+
   <!-- Hamburger Menu Icon -->
   <div class="menu-icon" onclick="toggleMenu()">☰</div>
-  
-  <!-- Navigation -->
-  <div class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="bio.html">Bio/CV</a>
-    <a href="research.html">Research</a>
-    <a href="teaching.html">Teaching</a>
-  </div>
-  
-  <nav id="dropdown-menu">
+
+  <!-- Container for all content -->
+  <div class="container">
+    <!-- Title section centered above navigation -->
+    <div class="title">Malcolm Keswell</div>
+
+    <!-- Navigation centered below title -->
+    <div class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="bio.html">Bio/CV</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+    </div>
+
+    <nav id="dropdown-menu">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="bio.html">Bio/CV</a></li>
@@ -181,19 +209,19 @@
     </ul>
   </nav>
 
-  <!-- Container for content -->
-  <div class="container">
-    <!-- Title -->
-    <div class="title">Malcolm Keswell</div>
-
-    <!-- Profile Section -->
+    <!-- Profile image and text in 2-column format -->
     <div class="profile-section">
-      <img src="close_up_office.jpeg" alt="Profile photo of Malcolm Keswell" class="profile-img">
+        <img src="close_up_office.jpeg" alt="Profile Photo" class="profile-img">    
+
+
       <div class="text-section">
-        <p><b>Malcolm Keswell</b> is an associate professor of Economics at the University of Cape Town. His current research 
-           is on the economic analysis of risk and the application of machine learning to administrative data for the purposes 
-           of conducting impact evaluations.</p>
-        <p>Email: <a href="mailto:malcolm.keswell@uct.ac.za">malcolm.keswell@uct.ac.za</a></p>
+        <p> <b>Malcolm Keswell</b> is an associate professor in the school of Economics at the University of Cape Town. 
+            He holds a Ph.D from the University of Massachusetts at Amherst (2003). His current research is on the economic analysis of risk, 
+            and the application of machine learning to administrative data for the purposes of conducting impact evaluations.
+        </p>
+            <p><a href="https://lres.uct.ac.za/index.php/lres-conference/">Visit the LRES conference page here</a></p>
+        <p>Email: malcolm.keswell@uct.ac.za</a></p>
+
       </div>
     </div>
   </div>
@@ -205,5 +233,6 @@
       nav.classList.toggle('active');
     }
   </script>
+
 </body>
 </html>
