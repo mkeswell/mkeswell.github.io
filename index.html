@@ -3,47 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Malcolm Keswell, Associate Professor of Economics at the University of Cape Town, specializes in behavioral, experimental, and development economics.">
-  <meta name="keywords" content="Malcolm Keswell, Economics, University of Cape Town, Behavioral Economics, Experimental Economics, Development Economics, Land Restitution, LRES">
-  <meta name="robots" content="index, follow">
-
-  <!-- Open Graph Meta Tags (for social sharing) -->
-  <meta property="og:title" content="Malcolm Keswell - Associate Professor of Economics, UCT">
-  <meta property="og:description" content="Research and teaching in behavioral, experimental, and development economics. Project Lead of the Land Restitution Evaluation Study (LRES).">
-  <meta property="og:image" content="https://mkeswell.github.io/close_up_office.jpeg">
-  <meta property="og:url" content="https://mkeswell.github.io/">
-  <meta name="google-site-verification" content="googledb977b6c3b045cbe.html" />
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://mkeswell.github.io/">
-
-  <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Malcolm Keswell",
-    "jobTitle": "Associate Professor of Economics",
-    "affiliation": {
-      "@type": "Organization",
-      "name": "University of Cape Town",
-      "url": "https://www.uct.ac.za"
-    },
-    "url": "https://mkeswell.github.io/",
-    "sameAs": [
-      "https://www.researchgate.net/profile/Malcolm-Keswell",
-      "https://scholar.google.com/citations?user=Keswell",
-      "https://orcid.org/0000-0002-XXXX-XXXX"
-    ],
-    "email": "mailto:malcolm.keswell@uct.ac.za"
-  }
-  </script>
-
-  <!-- Page Title -->
-  <title>Malcolm Keswell - Associate Professor of Economics, University of Cape Town</title>
-
+  <title>Malcolm Keswell - Associate Professor of Economics</title>
   <style>
     /* Resetting margin and padding */
     * {
@@ -55,15 +15,13 @@
     /* Body styling */
     body {
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #333333;
       line-height: 1.6;
       margin: 0;
       display: flex;
       flex-direction: column;
     }
 
-    /* Container for the entire content */
+    /* Container for all content */
     .container {
       max-width: 900px;
       padding: 40px;
@@ -71,62 +29,31 @@
       text-align: center;
     }
 
-    /* Styling for the title */
+    /* Title section */
     .title {
       font-size: 1.5rem;
       font-weight: bold;
       margin-bottom: 10px;
-      text-align: center;
     }
 
-    /* Navigation links centered under the title */
-    .top-nav {
-      margin-bottom: 30px;
-      text-align: center;
-    }
-
-    .top-nav a {
-      font-size: 0.9rem;
-      color: #007bff;
-      text-decoration: none;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-
-    .top-nav a:hover {
-      text-decoration: none;
-    }
-
-    /* Flexbox layout for the profile image and text */
+    /* Profile section */
     .profile-section {
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      max-width: 1000px;
       margin: 0 auto;
       text-align: left;
     }
 
-    /* Profile image styling */
     .profile-img {
       max-width: 250px;
-      margin-right: 40px;
       width: 250px;
       height: auto;
+      margin-right: 40px;
     }
 
-    /* Text section styling */
     .text-section {
       max-width: 500px;
-      text-align: left;
-    }
-
-    /* Styling for the name (heading) */
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      font-weight: bold;
-      text-align: center;
     }
 
     /* Paragraph styling */
@@ -136,44 +63,58 @@
       line-height: 1.6;
     }
 
-    /* Links in the main body */
-    .text-section a {
-      color: #007bff;
+    /* Top Navigation */
+    nav {
+      display: none;
+      background-color: #f8f9fa;
+      padding: 10px;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      z-index: 1000;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav ul li a {
       text-decoration: none;
+      color: #333;
+      font-size: 1rem;
     }
 
-    .text-section a:hover {
-      text-decoration: underline;
+    .menu-icon {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
     }
 
-    /* Adjust layout for mobile devices */
+    nav.active {
+      display: block;
+    }
+
+    /* Mobile-specific styling */
     @media screen and (max-width: 650px) {
-      nav {
-        display: none;
+      .profile-section {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        background-color: #f8f9fa;
-        padding: 10px 0;
-      }
-
-      .menu-icon {
-        display: block;
-        text-align: center;
-        font-size: 30px;
-        padding: 10px 0;
-      }
-
-      .menu-icon:hover {
-        cursor: pointer;
-      }
-
-      nav.active {
-        display: block;
       }
 
       .profile-img {
-        width: 100%;
-        height: auto;
-        display: block;
         margin: 20px auto;
         max-width: 300px;
       }
@@ -182,40 +123,52 @@
         max-width: 100%;
         padding: 0 15px;
         font-size: 16px;
-        text-align: left;
+        text-align: center;
       }
 
-      button, a {
-        padding: 10px 20px;
+      .menu-icon {
+        display: block;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Container for all content -->
+  <!-- Hamburger Menu Icon -->
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  
+  <!-- Navigation -->
+  <nav id="dropdown-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bio.html">Bio/CV</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+    </ul>
+  </nav>
+
+  <!-- Container for content -->
   <div class="container">
-    <!-- Title section centered above navigation -->
+    <!-- Title -->
     <div class="title">Malcolm Keswell</div>
 
-    <!-- Navigation centered below title -->
-    <div class="top-nav">
-      <a href="index.html">Home</a>
-      <a href="bio.html">Bio/CV</a>
-      <a href="research.html">Research</a>
-      <a href="teaching.html">Teaching</a>
-    </div>
-
-    <!-- Profile image and text in 2-column format -->
+    <!-- Profile Section -->
     <div class="profile-section">
       <img src="close_up_office.jpeg" alt="Profile photo of Malcolm Keswell" class="profile-img">
       <div class="text-section">
-        <p><b>Malcolm Keswell</b> is an associate professor of Economics at the University of Cape Town. 
-           His current research is on the economic analysis of risk, and the application of machine learning 
-           to administrative data for the purposes of conducting impact evaluations.
-           </p>
+        <p><b>Malcolm Keswell</b> is an associate professor of Economics at the University of Cape Town. His current research 
+           is on the economic analysis of risk and the application of machine learning to administrative data for the purposes 
+           of conducting impact evaluations.</p>
         <p>Email: <a href="mailto:malcolm.keswell@uct.ac.za">malcolm.keswell@uct.ac.za</a></p>
       </div>
     </div>
   </div>
+
+  <script>
+    // Function to toggle navigation menu
+    function toggleMenu() {
+      const nav = document.getElementById('dropdown-menu');
+      nav.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
